@@ -65,8 +65,31 @@ body {
     color: white;
   }
   
+  
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
+
+  .container {
+    margin-bottom: 5%;
+  }
   
+  .col-sm-1 {
+    font-size: 130%;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid gray;
+    background-color: rgb(146, 180, 245);
+    padding-top: 1.5%; 
+    font-weight: bold;
+  }
+
+  .col-sm-10 {
+    font-size: 100%;
+    background-color: lightgray; 
+    border-radius: 15px;
+    border: 1px solid gray;
+    height: 100%;
+    width: 100%;
+  }

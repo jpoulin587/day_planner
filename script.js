@@ -3,7 +3,7 @@ let currentHour
 
 //display the current time
 function displayTime() {
-    let todaysDate = moment().format('MMM DD, YYYY');
+    let todaysDate = moment().format('dddd, MMMM DD, YYYY');
     currentDayEl.text(todaysDate);
   };
 
@@ -42,84 +42,82 @@ displayTime();
 hourIndicator();
 
 
-// change the color of the hour bubbles for the current hour (https://www.w3schools.com/jsref/met_element_setattribute.asp)
+// change the color of the hour bubbles for the current hour (https://www.w3schools.com/jsref/met_element_setattribute.asp) and (https://www.w3schools.com/jquery/jquery_css.asp)
 if (currentHour > 8) {
-  console.log("it's past 8");
-  //document.getElementById("hr08").setAttribute("style", "background-color: pink;");
-  document.getElementById("hr08").style.backgroundColor = "pink"
+  $("#hr08").css("background-color", "pink");
 } else if (currentHour === 8) {
   console.log("it's currently 8");
-  document.getElementById("hr08").style.backgroundColor = "white"
+  $("#hr08").css("background-color", "LightGreen");
 };
 
 if (currentHour > 9) {
-  document.getElementById("hr09").style.backgroundColor = "pink"
+  $("#hr09").css("background-color", "pink");
 } else if (currentHour === 9) {
   console.log("it's currently 9");
-  document.getElementById("hr09").style.backgroundColor = "white"
+  $("#hr09").css("background-color", "LightGreen");
 };
 
 if (currentHour > 10) {
   document.getElementById("hr10").style.backgroundColor = "pink"
 } else if (currentHour === 10) {
   console.log("it's currently 10");
-  document.getElementById("hr10").style.backgroundColor = "white"
+  document.getElementById("hr10").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 11) {
   document.getElementById("hr11").style.backgroundColor = "pink"
 } else if (currentHour === 11) {
   console.log("it's currently 11");
-  document.getElementById("hr11").style.backgroundColor = "white"
+  document.getElementById("hr11").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 12) {
   document.getElementById("hr12").style.backgroundColor = "pink"
 } else if (currentHour === 12) {
   console.log("it's currently 12");
-  document.getElementById("hr12").style.backgroundColor = "white"
+  document.getElementById("hr12").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 13) {
   document.getElementById("hr01").style.backgroundColor = "pink"
 } else if (currentHour === 13) {
   console.log("it's currently 1:00");
-  document.getElementById("hr01").style.backgroundColor = "white"
+  document.getElementById("hr01").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 14) {
   document.getElementById("hr02").style.backgroundColor = "pink"
 } else if (currentHour === 14) {
   console.log("it's currently 2:00");
-  document.getElementById("hr02").style.backgroundColor = "white"
+  document.getElementById("hr02").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 15) {
-  document.getElementById("hr03").style.backgroundColor = "pink"
+  $("#hr03").css("background-color", "pink")
 } else if (currentHour === 15) {
   console.log("it's currently 03");
-  document.getElementById("hr03").style.backgroundColor = "LightGreen"
+  $("#hr03").css("background-color", "LightGreen")
 };
 
 if (currentHour > 16) {
   document.getElementById("hr04").style.backgroundColor = "pink"
 } else if (currentHour === 16) {
   console.log("it's currently 4");
-  document.getElementById("hr04").style.backgroundColor = "white"
+  document.getElementById("hr04").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 17) {
   document.getElementById("hr05").style.backgroundColor = "pink"
 } else if (currentHour === 17) {
   console.log("it's currently 5");
-  document.getElementById("hr05").style.backgroundColor = "white"
+  document.getElementById("hr05").style.backgroundColor = "LightGreen"
 };
 
 if (currentHour > 18) {
   document.getElementById("hr06").style.backgroundColor = "pink"
 } else if (currentHour === 18) {
   console.log("it's currently 6");
-  document.getElementById("hr06").style.backgroundColor = "white"
+  document.getElementById("hr06").style.backgroundColor = "LightGreen"
 };
 
 

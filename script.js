@@ -1,10 +1,19 @@
 let currentDayEl = $('#current-day');
+let currentHour
 
 //display the current time
 function displayTime() {
-    let rightNow = moment().format('MMM DD, YYYY');
-    currentDayEl.text(rightNow);
+    let todaysDate = moment().format('MMM DD, YYYY');
+    currentDayEl.text(todaysDate);
   };
+
+//get the current hour.
+function hourIndicator() {
+  currentHour = moment().hour();
+  console.log(currentHour);
+}
+
+
 
 // save data from the form to local storage
   $(".savebtn").on("click", function() {
@@ -30,3 +39,10 @@ $("#event06").val(localStorage.getItem("hr06"));
 
 //run the date display function on page load
 displayTime();
+hourIndicator();
+
+// change the color of the hour bubbles for the current hour
+if (currentHour > 8) {
+  console.log("it's past 8");
+  document.getElementById("hr08").setAttribute("style", "background-color: pink;");
+}
